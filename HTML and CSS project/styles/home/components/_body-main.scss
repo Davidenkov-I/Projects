@@ -1,0 +1,276 @@
+
+.main{
+    flex-grow: 1;
+    background-color: $main_color;
+}
+
+
+
+.main-content{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* >>>>>>>>>> BLOCK_1 <<<<<<<<<<*/
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 30.2%;
+    margin-top: 26px;
+    margin-bottom: 38px;
+    padding: 0 10px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.box:nth-child(2){
+    margin-left: 4.7%;
+    margin-right: 4.7%;
+}
+
+.box-h2{
+    color: $text_darkgray;
+    @include font(25px, 300);
+}
+
+.box-caption__text{
+    color: #5f7390;
+    @include font(15px, 300);
+}
+
+.box-text{
+    color: $text_darkgray;
+    @include font(14px, 300);
+    line-height: 20px;
+}
+
+.box-caption{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box-icon{
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+
+
+/* >>>>>>>>>> BLOCK_2 <<<<<<<<<<*/
+
+.news{
+    min-height: 76px;
+    margin-bottom: 44px;
+    background-image: url('../../images/news_bg.png');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.news-text{
+    text-align: center;
+    padding-top: 18px;
+
+    p{
+        color: $text_lightgray;
+        font-family: Contra;
+        @include font(16px, 400);
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.news-text__p2{
+    margin-top: 10px;
+}
+
+
+
+/* >>>>>>>>>> BLOCK_3 <<<<<<<<<<*/
+
+.ipad-caption{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.ipad-caption__h2{
+    color: $text_darkgray;
+    @include font(27px, 300);
+}
+
+.ipad-caption__p{
+    color: #5f7390;
+    @include font(15px, 300);
+}
+
+.ipad-main{
+    display: flex;
+}
+
+.ipad-main__images{
+    margin-left: 10px;
+}
+
+.ipad-list{
+    margin-left: 57px;
+    margin-right: 10px;
+    margin-top: 51px;
+    color: $text_lightgray;
+    @include font(15px, 300);
+
+    list-style-image: url('../../images/icon_play.png');
+    font-family: 'Heebo', sans-serif;
+}
+
+.ipad-list__element{
+    margin-top: 17px;
+}
+
+.ipad-button{
+    background: linear-gradient(bottom, #164283, #2d6ac1);
+    color: $text_fff;
+    @include font(19px, 400);
+    border: none;
+    border-radius: 7px;
+    padding: 6px 18px;
+    margin-top: 20px;
+    margin-bottom: 46px;
+}
+
+.ipad-button:hover{
+    opacity: 0.8;
+}
+
+.ipad-button__read{
+    margin-left: 58px;
+}
+
+.ipad-button__download{
+    margin-left: 25px;
+}
+
+
+
+/* >>>>>>>>>> BLOCK_4 <<<<<<<<<<*/
+
+.block4_list{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottom-list{
+    width: 85%;
+    color: $text_lightgray;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    list-style-image: url('../../images/icon_+.png');
+    font-family: 'Heebo', sans-serif;
+}
+
+.bottom-list__cont-element:nth-child(1){
+    border-top: 1px solid #cfcfcf;
+}
+
+.bottom-list__cont-element{
+    border-bottom: 1px solid #cfcfcf;
+    padding-left: 25px;
+}
+
+.bottom-list__element{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+/* MEDIA */
+
+/* block_1 */
+@media (max-width: 768px){
+  
+    .box{
+        width: 45%;
+    }
+
+    .box:nth-child(2){
+        margin-left: 10%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 549px){
+
+    .box:nth-child(2){
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* block_3 */
+@media (max-width: 768px){
+    
+    .ipad-caption{
+        margin-bottom: 20px;
+    }
+
+    .ipad-main{
+        flex-direction: column;
+        max-width: 482px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ipad-main__images{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 499px){
+
+    .ipad-main__images{
+        margin-left: auto;
+        margin-right: auto;
+        width: 310px;
+        padding-left: 10px;
+
+        img{
+            width: 300px;
+            height: 183px;
+        }
+    }
+
+    .ipad-list{
+        margin-left: 25px;
+    }
+
+    .ipad-button__read{
+        margin-left: 30px;
+    }
+}
+
+/* block_4 */
+@media (max-width: 768px){
+
+    .bottom-list{
+        width: 100%;
+    }
+}
+

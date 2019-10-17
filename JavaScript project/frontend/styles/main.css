@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-menu {
+  padding-top: 150px;
+}
+
+.main-menu__conteiner {
+  margin-top: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-button {
+  margin: 0 auto;
+  border: 2px solid #525151;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.menu-button:not([disabled]):hover {
+  background-color: #333333;
+  color: white;
+  border: 2px solid grey;
+}
+
+.achievement-content {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.achievements-captions {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.acievements-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.achievements-list {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.achievements-list li {
+  margin-bottom: 5px;
+}
+
+.credits__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+}
+
+.credits__text {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 50px;
+  padding: 10px 10px;
+  border: 2px solid #4e4e4e;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.credits__text-heading {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.credits__text-base {
+  margin-bottom: 15px;
+}
+
+.regulations {
+  padding-top: 150px;
+}
+
+.regulations__conteiner {
+  max-width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.regulations__text-conteiner {
+  margin-bottom: 50px;
+  font-size: 17px;
+  border: 2px solid #4e4e4e;
+  background-color: lightgrey;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.new-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-game__conteiner {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 150px;
+  padding: 20px 20px;
+  border: 2px solid #4e4e4e;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.new-game__text-form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.new-game__input-field {
+  width: 150px;
+  height: 28px;
+  margin-bottom: 10px;
+}
+
+.new-game__button-form {
+  border: 1px solid #4e4e4e;
+  padding: 5px 10px;
+}
+
+.new-game__button-form:not([disabled]):hover {
+  background-color: #363636;
+  color: white;
+}
+
+.new-game__conect-text {
+  text-align: center;
+  margin-top: 30px;
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.game-window {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-window__left {
+  width: 70%;
+  min-width: 500px;
+}
+
+.game-window__right {
+  min-width: 200px;
+  width: 30%;
+  border: 2px solid #4e4e4e;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right-field__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.right-field__hints {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.botton-hint {
+  border: 2px solid #4e4e4e;
+  background-color: lightgray;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-width: 150px;
+  font-size: 17px;
+}
+
+.botton-hint:not([disabled]):hover {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.right-field__stages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.stages-conteiner {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stages-conteiner li {
+  margin-bottom: 3px;
+  border: 1px solid gray;
+  text-align: center;
+  width: 100px;
+  background-color: #a0a0a0;
+}
+
+.stages-conteiner .fireproof {
+  color: white;
+}
+
+.stages-conteiner .stages-focus {
+  background-color: #353535;
+  color: white;
+}
+
+.game-left__questions {
+  width: 100%;
+  min-height: 205px;
+  padding-top: 25px;
+  background-color: #e9e9e9;
+}
+
+.question-field {
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #4e4e4e;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.questions-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.answers-field {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-answer {
+  min-width: 150px;
+  max-width: 250px;
+  width: 100%;
+  min-height: 40px;
+  padding: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 2px solid #4e4e4e;
+  border-radius: 10px;
+  background-color: lightgray;
+  font-size: 18px;
+}
+
+.button-answer:not([disabled]):hover {
+  background-color: white;
+}
+
+.answer-focus {
+  background-color: chocolate;
+}
+
+.answer-focus:not([disabled]):hover {
+  background-color: chocolate;
+}
+
+.answer-true {
+  background-color: #2dd21e;
+}
+
+.answer-true:not([disabled]):hover {
+  background-color: #2dd21e;
+}
+
+.answer-false {
+  background-color: #d21e1e;
+}
+
+.answer-false:not([disabled]):hover {
+  background-color: #d21e1e;
+}
+
+.game-left__screen {
+  width: 100%;
+  min-height: 500px;
+  background-color: lightgrey;
+}
+
+.hint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+
+.hint-text {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.hint-btn {
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  color: black;
+}
+
+.win-conteiner {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__win {
+  margin-top: 200px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 150px;
+}
+/*# sourceMappingURL=main.css.map */

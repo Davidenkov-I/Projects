@@ -1,0 +1,89 @@
+
+.game-window__right{
+    min-width: 200px;
+    width: 30%;
+
+    border: 2px solid rgb(78, 78, 78);
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.right-field__menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.right-field__hints{
+    display: flex;
+    flex-direction: column;
+}
+
+.botton-hint{
+    border: 2px solid rgb(78, 78, 78);
+    background-color: lightgray;
+    padding: 5px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    min-width: 150px;
+
+    font-size: 17px;
+}
+
+.botton-hint:not([disabled]):hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.right-field__stages{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.stages-conteiner{
+    font-size: 18px;
+    font-weight: 600;
+
+    li{
+        margin-bottom: 3px;
+        border: 1px solid gray;
+        text-align: center;
+        width: 100px;
+        background-color: rgb(160, 160, 160);
+    }
+
+    .fireproof{
+        color: white;
+    }
+
+    .stages-focus{
+        background-color: rgb(53, 53, 53);
+        color: white;
+    }
+}
+

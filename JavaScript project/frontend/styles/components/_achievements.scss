@@ -1,0 +1,35 @@
+
+
+.achievement-content{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.achievements-captions{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.acievements-conteiner{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.achievements-list{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+
+    li{
+        margin-bottom: 5px;
+    }
+}
+

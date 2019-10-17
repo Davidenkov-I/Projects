@@ -1,0 +1,15 @@
+
+.game-window{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    min-height: 700px;
+
+    display: flex;
+}
+
+.game-window__left{
+    width: 70%;
+    min-width: 500px;
+}

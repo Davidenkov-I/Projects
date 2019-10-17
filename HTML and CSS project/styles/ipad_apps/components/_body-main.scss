@@ -1,0 +1,136 @@
+.main{
+    background-color: $main_color;
+    flex-grow: 1;
+
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box-conteiner__buttons{
+    display: flex;
+    border-bottom: 1px solid #c0c0c0;
+    max-width: 801px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 41px;
+}
+
+.button-top{
+    margin-left: 2px;
+    padding: 7px 20px;
+    border: none;
+    background-color: none;
+    color: $text_fff;
+    border-radius: 5px;
+    background-size: 100%;
+}
+
+.button-top:first-child{
+    background-image: linear-gradient(bottom, #373748, #47475b);
+}
+
+.button-top:nth-child(2){
+    margin-left: 6px;
+    background-image: linear-gradient(bottom, #c0c0c0, #d1d1d3);
+}
+
+
+
+/* Application*/
+
+.box-conteiner__application{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 801px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box-application{
+    display: flex;
+    margin-bottom: 63px;
+    width: 30%;
+}
+
+.box-application:nth-child(3n+2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box-application__img{
+    margin-right: 12px;
+}
+
+.application__h2{
+    color: $text_darkgray;
+    @include font(23px, 300);
+    margin-bottom: 3px;
+}
+
+.application__text{
+    color: #5f7390;
+    @include font(13px, 300);
+    margin-bottom: 18px;
+}
+
+.application__button{
+    color: $text_fff;
+    @include font(14px, 400);
+    padding: 5px 13px;
+    border: none;
+    background-image: linear-gradient(bottom, #373748, #47475b);
+    border-radius: 5px;
+}
+
+.application__button:hover{
+    opacity: 0.7;
+}
+
+/* MEDIA */
+
+@media (max-width: 799px){
+
+    .box-application:nth-child(3n+2){
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .box-application{
+        width: 45%;
+
+        &:nth-child(even){
+            margin-left: 10%;
+        }
+    }
+
+    .box-conteiner__application{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 599px){
+    .box-application{
+        width: 100%;
+
+        &:nth-child(even){
+            margin-left: 0;
+        }
+    }
+
+    .box-conteiner__application{
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

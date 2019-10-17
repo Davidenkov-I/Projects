@@ -1,0 +1,156 @@
+
+.header{
+    min-height: 132px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-label{
+    width: 33.33%;
+}
+
+.logo{
+    color: #ffffff;
+    display: flex;
+}
+
+.logo-img{
+    margin-right: 8px;
+}
+
+.logo__big-text{
+    font-size: 39px;
+}
+
+.logo__small-text{
+    font-size: 17px;
+}
+
+
+/*      Меню      */
+
+.header-menu{
+    width: 66.66%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-menu__buttons{
+    display: flex;
+}
+
+.menu-buttons__a{
+    text-decoration: none;
+    color: #d7d7e3;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.menu-buttons:nth-child(1n+2){
+    margin-left: 10px;
+}
+
+.menu-buttons__a:hover{
+    background-color: #d2d2d5;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+}
+
+
+
+/*@media (max-width: 799px){
+    .header-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-menu{
+        height: 56px;
+        width: 100%;
+    }
+
+    .header-label{
+        width: 100%;
+        margin-top: 38px;
+    }
+}*/
+
+@media (max-width: 899px){
+    .header-menu__buttons-nav{
+        position: fixed;
+        top: 0;
+        right: -200%;
+        width: 320px;
+        height: 100vh;
+        border: 1px solid black;
+        background: rgba(0,0,0,.6);
+        transition: .5s;
+        z-index: 50;
+
+        .header-menu__buttons{
+            flex-direction: column;
+            align-items: center;
+            
+            .menu-buttons:nth-child(1n+2){
+                margin-left: 0;
+                margin-top: 30px;
+            }
+
+            /* Анимация выезжающих кнопок */
+            .menu-buttons:nth-child(1n){
+                margin-left: 200%;
+                transition: 0.5s;
+            }
+            .menu-buttons:nth-child(1){
+                margin-top: 300px;
+                transition-delay: 0.2s;
+            }
+            .menu-buttons:nth-child(2){
+                transition-delay: 0.3s;
+            }
+            .menu-buttons:nth-child(3){
+                transition-delay: 0.4s;
+            }
+            .menu-buttons:nth-child(4){
+                transition-delay: 0.5s;
+            }
+            .menu-buttons:nth-child(5){
+                transition-delay: 0.6s;
+            }
+        }
+
+
+        &.active {
+            right: 0;
+
+            .menu-buttons:nth-child(1n){
+                margin-left: -0%;
+            }
+        }
+
+    }
+
+    .menu-buttons__a{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .header-label{
+        width: 100%;
+        margin: auto 0;
+    }
+}

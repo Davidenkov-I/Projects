@@ -1,0 +1,347 @@
+
+.webpage{
+    background-image: url('../../images/bg_fon.png');
+    background-color: $main_color;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.webpage-main{
+    max-width: 936px;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* webpage-top */
+
+.webpage-main__top{
+    min-height: 101px;
+    background-image: url('../../images/webpage_top.png');
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-caption{
+    margin-left: 35px;
+    color: $text_darkgray;
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.top-caption-text{
+    margin-left: 35px;
+    color: #5f7390;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.webpage-main__search-conteiner{
+    position: relative;
+}
+
+.search-input{
+    margin-right: 43px;
+    padding: 0px 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    position: relative;
+    z-index: 3;
+}
+
+.placeholder-search{
+    color: #bfbfbf;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    z-index: 2;
+}
+
+.search-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2px;
+}
+
+.search-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.search-field{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.search-input:focus + .placeholder-search,
+.search-input:valid + .placeholder-search{
+    z-index: 0;
+    display: none;
+}
+
+
+
+/* webpage-contacts */
+
+.webpage-contacts{
+    display: flex;
+
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: $main_color;
+}
+
+.registration{
+    padding-top: 59px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input-registration__conteiner{
+    position: relative;
+}
+
+.contact-input{
+    position: absolute;
+    z-index: 0;
+}
+
+.input-registration__text{
+    position: absolute;
+    z-index: 1;
+    color: #9d9d9d;
+    font-size: 21px;
+    font-weight: 300;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.input-registration{
+    position: relative;
+    z-index: 2;
+
+    width: 347px;
+    height: 42px;
+    margin-bottom: 24px;
+
+    border-radius: 5px;
+    border: none;
+    background: none;
+
+    color: #9d9d9d;
+    font-size: 21px;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+
+.registration-message{
+    position: relative;
+    z-index: 2;
+
+    width: 347px;
+    height: 93px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+
+    color: #9d9d9d;
+    font-size: 21px;
+    font-weight: 300;
+    padding: 5px 10px;
+
+    max-width: 347px;
+    max-height: 93px;
+}
+
+.input-registration:focus + .input-registration__text,
+.input-registration:valid + .input-registration__text,
+.registration-message:focus + .input-registration__text,
+.registration-message:valid + .input-registration__text{
+    z-index: 0;
+    display: none;
+}
+
+.contact-button{
+    margin-top: 19px;
+    border: none;
+    color: $text_fff;
+    font-size: 19px;
+    font-weight: 400;
+    background: linear-gradient(bottom, #174284, #2c6ac0);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+/* right */
+
+.contacts{
+    padding-top: 59px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adress-conteiner{
+    max-width: 382px;
+    width: 100%;
+    
+    padding: 10px 26px;
+    padding-bottom: 30px;
+    background-color: #ebedf0;
+    border-radius: 5px;
+
+    color: #9d9d9d;
+}
+
+.adress-caption{
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.adress-text{
+    margin-left: 7px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.map{
+    width: 335px;
+    height: 282px;
+    margin-top: 15px;
+    margin-bottom: 75px;
+}
+
+
+
+
+/* webpage-top */
+
+@media (max-width: 899px){
+    .webpage-main__top{
+        flex-direction: column;
+        background-image: linear-gradient(bottom, #d5d6d8, #e9e9eb);
+    }
+
+    .webpage-main__top-caption{
+        margin-top: 15px;
+        margin-right: auto;
+    }
+
+    .webpage-main__search-conteiner{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 599px){
+    .webpage-main__top{
+        height: 100%;
+    }
+}
+
+@media (max-width: 449px){
+    .webpage-main__search-conteiner{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-input{
+        margin-right: 0;
+    }
+}
+
+
+/* Contacts */ 
+
+@media (max-width: 749px){
+    .webpage-contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration{ 
+        width: 100%;
+    }
+
+    .contacts{
+        width: 100%;
+    }
+}
+
+@media (max-width: 449px){
+    .registration-form{
+        width: 320px;
+    }
+
+    .input-registration__conteiner{
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .contact-input{
+        width: 300px;
+    }
+
+    .input-registration{
+        width: 300px;
+        height:36px;
+    }
+
+    .registration-message{
+        width: 300px;
+        height: 80px;
+        max-width: 300px;
+        max-height: 80px;
+        min-width: 300px;
+        min-height: 80px;
+    }
+
+    .input-registration__text{
+        margin-top: 3px;
+    }
+
+    .contact-button{
+        margin-right: 10px;
+    }
+
+    .map{
+        width: 300px;
+    }
+}
+
+

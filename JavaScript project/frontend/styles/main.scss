@@ -1,0 +1,24 @@
+@import 'helpers/reset';
+@import 'helpers/scaffolding';
+
+@import 'components/main_menu';
+@import 'components/options';
+@import 'components/achievements';
+@import 'components/credits';
+@import 'components/regulations';
+
+@import 'components/new_game';
+
+@import 'components/game_window';
+@import 'components/game_window_right';
+@import 'components/game_questions';
+@import 'components/screen_base';
+
+@import 'components/win';
+
+.page-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 150px;
+}

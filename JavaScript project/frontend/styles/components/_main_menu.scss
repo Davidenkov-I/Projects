@@ -1,0 +1,31 @@
+
+
+.main-menu{
+    padding-top: 150px;
+
+    &__conteiner{
+        margin-top: 30px;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+.menu-button{
+    margin: 0 auto;
+    border: 2px solid rgb(82, 81, 81);
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.menu-button:not([disabled]):hover{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 2px solid grey;
+}
